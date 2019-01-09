@@ -1,0 +1,2044 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:500,700');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+header{
+    margin-bottom: 1.5em; 
+    display: grid; 
+    grid-template-columns: 1fr,2fr,1fr; 
+    grid-template-areas: 
+    "logo  . navigation"  
+}
+
+.logo img{
+    grid-area: logo; 
+    margin-top: .2em;
+    margin-left:18.5em; 
+}
+
+
+main{
+    background-color: rgb(237, 238, 233); 
+    padding-bottom:2em; 
+
+}
+
+h1{
+    background-color: rgb(237, 238, 233); 
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    font-size:1.7em; 
+    margin-left:.4em;
+    margin-top:1.5em; 
+}
+
+h2{
+    font-size:1.35em; 
+}
+
+h3{
+    font-size:1em; 
+}
+
+h4{
+    font-size:.9em; 
+}
+
+h2, h3, h4{
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase; 
+}
+
+.text{
+    color:white; 
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+}
+
+p, ul, .informationOnTask{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:1.1em; 
+}
+
+footer{
+    background-color: white; 
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 2em; 
+    margin-bottom:2em; 
+    margin-left:.4em; 
+}
+
+a{
+    color: rgb(96,128,154);
+    cursor: pointer;
+}
+
+a:hover{
+    color: rgb(120, 162, 190); 
+}
+
+/*  /////////          Side navigation (mobile)         ///////// */ 
+
+#burgermenu{
+    color: black; 
+    font-size: 2.7em;
+    margin-top: .6em;
+    cursor: pointer;
+}
+
+nav{
+    display:none;
+}
+
+nav a:hover{
+    color: black; 
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 5em; 
+    z-index: 99;
+    grid-area: navigation;
+}
+  
+.sidenav a {
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    padding:.8em; 
+    text-decoration: none;
+    font-size: 1.5em;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    text-align: left; 
+}
+    
+.sidenav .closebtn {
+    position: absolute;
+    top:0;
+    right: .9em;
+    font-size: 2.8em;
+    color: rgb(253, 206, 93);
+}
+
+/*  /////////         Index page       ///////// */ 
+
+#introVideoTablet, #introVideoWeb{
+    visibility: hidden;
+}
+
+/*  /////////         Project page       ///////// */ 
+
+/*  ////  Slideshow  /// */ 
+
+.slideshow{
+    margin-left:14vw;  
+    position: relative;
+    width:320px;
+    height:320px; 
+    margin-top: -2.5em;
+}
+
+.slide_img{
+    position: absolute; 
+    width:100%;
+    height: 100%;
+}
+
+#img1,#img2,#img3, #img4, #img5,#img6, #img7, #img8,#img9, #img10, #img11,#img12,#img13 {
+    display:none; 
+}
+
+.previous, .next{
+    font-size: 1.8em; 
+    margin-top: 5em; 
+    position: absolute; 
+    cursor: pointer;
+    color: rgb(253, 206, 93);
+}
+
+.previous{
+    margin-left:-11.5em;
+}
+
+.next{
+    margin-left: -.4em;
+}
+
+.slide_img{
+    z-index: -1; 
+}
+
+#img1:checked ~ #one, 
+#img2:checked ~ #two, 
+#img3:checked ~ #three,
+#img4:checked ~ #four,
+#img5:checked ~ #five,
+#img6:checked ~ #six,
+#img7:checked ~ #seven,
+#img8:checked ~ #eight,
+#img9:checked ~ #nine,
+#img10:checked ~ #ten,
+#img11:checked ~ #eleven,
+#img12:checked ~ #twelve,
+#img13:checked ~ #thirteen{ 
+    z-index: 9;
+}
+
+/*  ////  Project areas  /// */ 
+
+#webProjects h1, #contentProjects h1, #animationProjects h1, #uxProjects h1{
+    margin-bottom:2em; 
+    margin-top: -1em ;
+    margin-left:1.4em; 
+}
+
+#projectsAll h1{
+    margin-top: 1em ;
+    margin-left:1.4em; 
+}
+
+#link1, #link2, #link3, #link4, #link5, #link6, #link7, #link8, #link9, #link10, #link11, #link12, #link13{
+    margin-left:2.2em;  
+    margin-bottom:5em; 
+}
+
+#link1 #webProjectImg{
+    background-image: url("../images/small/basicWeb_mobile.jpg");  
+    height:15em; 
+    width:25em;  
+}
+
+#link2 #contentProjectImg1{
+    background-image: url("../images/small/basicContent1_mobile.jpg");  
+    height:15em; 
+    width:25em; 
+}
+#link3 #contentProjectImg2{
+    background-image: url("../images/small/basicContent2_mobile.jpg");  
+    height:15em; 
+    width:25em; 
+}
+
+#link4 #animationProjectImg1{
+    background-image: url("../images/small/basicAnimation1_mobile.jpg");  
+    height:15em; 
+    width:25em; 
+}
+#link5 #animationProjectImg2{
+    background-image: url("../images/small/basicAnimation2_mobile.jpg");  
+    height:15em; 
+    width:25em; 
+}
+#link6 #animationProjectImg3{
+    background-image: url("../images/small/basicAnimation3_mobile.jpg");  
+    height:15em; 
+    width:25em;  
+}
+#link7 #animationProjectImg4{
+    background-image: url("../images/small/basicAnimation4_mobile.jpg");  
+    height:15em; 
+    width:25em; 
+}
+#link8 #animationProjectImg5{
+    background-image: url("../images/small/basicAnimation5_mobile.jpg");  
+    height:15em; 
+    width:25em; 
+}
+#link9 #animationProjectImg6{
+    background-image: url("../images/small/basicAnimation6_mobile.jpg");  
+    height:15em; 
+    width:25em; 
+}
+
+#link10 #uxProjectImg1{
+    background-image: url("../images/small/basicUx1_mobile.jpg");  
+    height:15em; 
+    width:25em; 
+}
+#link11 #uxProjectImg2{
+    background-image: url("../images/small/basicUx2_mobile.jpg");  
+    height:15em; 
+    width:25em; 
+}
+#link12 #uxProjectImg3{
+    background-image: url("../images/small/basicUx3_mobile.jpg");  
+    height:15em; 
+    width:25em; 
+}
+#link13 #uxProjectImg4{
+    background-image: url("../images/small/basicUx4_mobile.jpg");  
+    height:15em; 
+    width:25em; 
+}
+
+.text{
+    margin-top: -2.7em; 
+    margin-left: 1em; 
+}
+
+.whiteArrow{
+    color: white; 
+    font-size: 1.65em; 
+    margin-left:13.2em;
+    margin-top: -1.6em; 
+}
+
+/*  /////////          Individual project pages         ///////// */ 
+
+.backBtn{
+    font-size: 2.8em; 
+    color: rgb(253, 206, 93);
+    margin-top: .8em;  
+    margin-right:-2em; 
+}
+
+.backBtn:hover{
+    color: rgb(253, 206, 93);
+}
+
+.subpage{
+    display: inline-block; 
+    background-color: rgb(253, 206, 93); 
+    width:15%;
+    height:2em; 
+}
+
+.theme{
+    display: inline-block; 
+    background-color: rgba(253, 205, 93, 0.616); 
+    width:40%;
+    height:2em; 
+    margin-left:-.25em; 
+}
+
+.project{
+    display: inline-block; 
+    background-color: rgba(253, 205, 93, 0.288); 
+    width:45%;
+    height:2em; 
+    margin-left:-.25em; 
+}
+
+.subpage p, .theme p, .project p{
+    font-size:.7em; 
+    margin-left:1em; 
+    color:white;
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif; 
+}
+
+
+.informationOnTask, .informationOnTheme{
+    display:none; 
+}
+
+.learningObjectives, .taskDescription, .process, #results{
+    margin-left: 1.5em; 
+    margin-right: 1.5em; 
+    margin-bottom: 3em;
+}
+
+.projectHeading{
+    margin-left:1em; 
+}
+
+.process h2{
+    margin-bottom:1.5em; 
+}
+
+
+/*  ////  Saul bass page /// */
+
+
+#saulbassPage1, #saulbassPage2, #saulbassPage3{
+    width:31%; 
+    height:31%;
+    display: inline-block; 
+    margin-bottom:1em; 
+}
+
+#saulbassColors{
+    width:40%; 
+    height:40%;
+    margin-bottom:1em; 
+} 
+
+#saulbassImgBackgrounds{
+    width:50%;
+    height:50%; 
+    margin-left:-2.1em; 
+    margin-bottom:1em; 
+}
+ 
+#saulbassLogo{
+    width:40%; 
+    height:40%;
+    margin-left:-.8em; 
+    margin-bottom:1em; 
+} 
+
+#saulbassBanner{
+    width:45%; 
+    height:45%;
+    margin-bottom:1em; 
+}
+
+/*  ////  Be a bikenhagen page /// */
+
+#bikenhagenPage1, #bikenhagenPage2, #bikenhagenPage3{
+    height:20em; 
+    width:15em; 
+    background-color: pink; 
+    display: inline-block; 
+}
+
+#bikenhagenVideo{
+    width:90%;
+    height:90%; 
+}
+/*  ////  Without words page /// */
+
+#withoutwordsVideo{
+    width:70%; 
+    height:70%; 
+}
+
+/*  ////  Whalie page /// */
+
+#whalieAnimation{
+    width:80%; 
+    height:80%; 
+    margin-bottom: 1em; 
+}
+
+/*  ////  Kogi page /// */
+
+#kogiCharacters1,#kogiCharacters2,#kogiCharacters3, #kogiCharacters4 {
+    display: inline-block; 
+    width:40%;
+    height:40%; 
+}
+
+#kogiBackgrounds1, #kogiBackgrounds2, #kogiBackgrounds3{
+    display: inline-block; 
+    width:60%;
+    height:60%; 
+}
+
+#kogiBackgrounds3{
+    margin-bottom: 1.8em;
+}
+
+
+#kogiMotion1, #kogiMotion2, #kogiMotion3{
+    width:50%;
+    height:50%; 
+}
+
+/*  ////  Slideshow  /// */ 
+
+.storyboardSlideshow{
+    margin-left:3em; 
+    padding-top:4.5em;  
+    margin-bottom:4em;  
+    position: relative;
+    width:320px;
+    height:320px; 
+    margin-top: -2.5em;
+    display: none; 
+}
+
+.sbImg{
+    position: absolute; 
+    width:100%;
+    height: 100%;
+}
+
+#sb1,#sb2,#sb3,#sb4,#sb5,#sb6,#sb7,#sb8,#sb9,#sb10{
+    display:none; 
+}
+
+.sbPrevious, .sbNext{
+    font-size: 2.5em; 
+    margin-top: 5em; 
+    position: absolute; 
+    cursor: pointer;
+    color: rgb(253, 206, 93);
+    
+}
+
+.sbPrevious{
+    margin-top:.1em; 
+    margin-left:2.9em;
+}
+
+.sbNext{
+    margin-top:.1em; 
+    margin-left: 4.5em;
+}
+
+.sbImg{
+    z-index: -1; 
+}
+
+#sb1:checked ~ #sbOne, 
+#sb2:checked ~ #sbTwo, 
+#sb3:checked ~ #sbThree,
+#sb4:checked ~ #sbFour,
+#sb5:checked ~ #sbFive,
+#sb6:checked ~ #sbSix,
+#sb7:checked ~ #sbSeven,
+#sb8:checked ~ #sbEight,
+#sb9:checked ~ #sbNine,
+#sb10:checked ~ #sbTen{ 
+    z-index: 9;
+}
+
+.sbImg #sbTwo{
+    width:10%;
+    height:10%; 
+}
+/*  ////  mario page /// */
+
+#marioAndPeach{
+    width:75%;
+    height:75%; 
+    margin-bottom: 1.8em;
+}
+
+/*  ////  drum machine page /// */
+
+#drummachineLook{
+    width:75%;
+    height:75%;
+    margin-bottom:1.8em;
+}
+
+/*  ////  simple calculator page /// */
+
+#calculatorStep1, #calculatorStep3{
+    width:55%;
+    height:55%;
+}
+
+/*  ////  little prince page /// */
+
+#littleprinceSong{
+    width:10em;
+    height:8em; 
+    background-color: rgb(253, 206, 93); 
+    margin-bottom:2.8em;
+    cursor: pointer;
+}
+
+#littleprinceSong p{
+    color: white; 
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    font-size: .9em; 
+    text-align: center;
+    padding-top:3.5em; 
+}
+
+#littleprinceCharacters1, #littleprinceCharacters2{
+    display: inline-block; 
+    width:45%;
+    height:45%; 
+}
+
+#littleprinceBackgrounds1, #littleprinceBackgrounds2, #littleprinceBackgrounds3{
+    display: inline-block; 
+    width:45%;
+    height:45%; 
+    margin-bottom: 1.8em; 
+}
+
+#littleprinceInteraction1, #littleprinceInteraction2, #littleprinceInteraction3, #littleprinceInteraction4, #littleprinceInteraction5{
+    display: inline-block; 
+    cursor: pointer;
+    width:25%;
+    height:25%; 
+}
+
+/*  ////  design sprint page /// */
+
+.sprintSketch, #sprintDecide{
+    width:70%;
+    height:70%; 
+    background-color: lightsalmon;
+}
+
+#sprintSketch2{
+    width:50%;
+    height:50%;
+}
+
+#sprintSketch3{
+    width:40%;
+    height:40%;
+}
+
+/*  ////  native app page /// */
+
+#nativeappSketch, #nativeappDecide{
+    width:95%;
+    height:95%;
+}
+
+#nativeappDecide{
+    margin-bottom: 1em; 
+}
+
+/*  ////  web prototype page /// */
+
+.webprototypeSteps{
+    display: inline-block;
+    width:45%;
+    height:45%; 
+    margin-bottom: .8em; 
+}
+
+/*  /////////          About me page         ///////// */ 
+
+#eastereggHamburg, #eastereggEducation, #eastereggWork,  #eastereggHobbies{
+    display: none;
+}
+
+.aboutmeIcons{
+    margin-left:2em; 
+}
+
+.aboutmeIcons, h1{
+    display: inline-block; 
+}
+
+#workExperienceText .aboutmeIcons, #hobbiesText .aboutmeIcons{
+    margin-left:-.01em;
+}
+
+#workExperienceText, #hobbiesText, #educationText, #detailsText{
+    margin-bottom: 4em;
+    margin-left:1.2em; 
+    margin-right:1.2em; 
+} 
+
+#workExperienceText h1, #hobbiesText h1, #educationText h1, #detailsText h1{
+    margin-left:-.01em;
+}
+        
+
+/*  /////////          Media querie       ///////// */ 
+/*  /////////          Tablet       ///////// */ 
+
+@media all and (min-width:750px) {
+
+    /*  ////  All pages /// */ 
+
+    .logo img{
+        width:65%;
+        margin-left: 1.5em; 
+        margin-top:.5em; 
+        margin-bottom: -.5em; 
+    }
+
+    .backBtn{
+        display: none; 
+    }
+
+    /*  ////  Navigation  /// */ 
+
+    #burgermenu{
+        display: none;
+    }
+
+    nav{
+        grid-area: navigation;
+        display: inline-block;
+        margin-top:3em;
+        margin-left:22em; 
+    }
+    
+    nav a{
+        font-family: 'Ubuntu', sans-serif;
+        color: black; 
+        text-transform: uppercase;
+        text-decoration: none;
+        padding:.5em; 
+    }
+
+    /*  ////  Intro page  /// */ 
+
+    #introVideoWeb{
+        visibility: hidden;
+        margin-top: -30.2em; 
+    }
+
+    #introMobile{
+        display: none; 
+    }
+
+    #introVideoTablet{
+        visibility: visible; 
+        margin-bottom: -17em; 
+    }
+
+    /*  ////  Project page (slideshow + project areas)   /// */ 
+
+    .slideshow{
+        margin-top:-5em; 
+        width:30em; 
+        height:20em; 
+        margin-left:13em; 
+
+    }
+
+    .previous, .next{
+        font-size: 2em; 
+        margin-top: 6em; 
+        position: absolute; 
+        cursor: pointer;
+        color: rgb(253, 206, 93);
+    }
+    
+    .previous{
+        margin-left:-13.5em;
+    }
+    
+    .next{
+        margin-left: -1em;
+    }
+
+    /*  ////  Project areas  /// */ 
+
+    #webProjects h1, #contentProjects h1, #animationProjects h1, #uxProjects h1{
+        margin-top: 1em ;
+        margin-left:1.4em; 
+        }
+
+    #webProjects h1{
+        margin-top: 3.5em ;
+    }
+
+    #projectsAll h1{
+        margin-top: 2em ;
+        margin-left:1.4em; 
+    }
+
+    .text{
+        font-size: 1em; 
+        margin-top: -3.3em; 
+        margin-left: 1em; 
+    }
+
+    .whiteArrow{
+        color: white; 
+        font-size: 1.5em; 
+        margin-left:13em;
+        margin-top: -1.6em; 
+    }
+
+
+    /* // basic web area // */ 
+
+    #link1 #webProjectImg{
+        background-image: url("../images/medium/basicWeb_tablet.jpg");
+        width:22.8em; 
+        height:20em;
+    }
+
+    /* // basic content area // */ 
+
+    #contentProjects{
+        display: grid; 
+        grid-template-columns: 1fr,1fr; 
+        grid-template-areas: 
+        "contentHeading contentHeading"
+        "contentProjectImg1 contentProjectImg2"  
+    }
+
+    #contentHeading{
+        grid-area: contentHeading; 
+    }
+
+
+    /* // be a bikenhagen // */ 
+
+    #link2 #contentProjectImg1{
+        background-image: url("../images/medium/basicContent1_tablet.jpg");
+        width:22.8em; 
+        height:20em;
+    }
+
+    #link2{
+        grid-area: contentProjectImg1; 
+    }
+
+    /* // a story without words // */ 
+
+    #link3 #contentProjectImg2{
+        background-image: url("../images/medium/basicContent2_tablet.jpg");
+        width:22.8em; 
+        height:20em;
+    }
+
+    #link3{
+        grid-area: contentProjectImg2; 
+    }
+  
+     /* // animation area // */ 
+
+    #animationProjects{
+        display: grid; 
+        grid-template-columns: 1fr,1fr; 
+        grid-template-areas: 
+        "animationHeading animationHeading"
+        "animationProjectImg1 animationProjectImg2"  
+        "animationProjectImg3 animationProjectImg4"  
+        "animationProjectImg5 animationProjectImg6"  
+    }
+
+    #animationHeading{
+        grid-area: animationHeading; 
+    }
+
+    /* // whalie // */ 
+
+    #link4 #animationProjectImg1{
+        background-image: url("../images/medium/basicAnimation1_tablet.jpg");
+        width:22.8em; 
+        height:20em; 
+    }
+
+    #link4{
+        grid-area: animationProjectImg1;
+    }
+
+    /* // little prince // */ 
+
+    #link5 #animationProjectImg2{
+        background-image: url("../images/medium/basicAnimation2_tablet.jpg");
+        width:22.8em; 
+        height:20em;
+        margin-top:-1.13em; 
+    }
+
+    #link5{
+        grid-area: animationProjectImg2;
+    }
+
+    /* // simple calculator // */ 
+
+    #link6 #animationProjectImg3{
+        background-image: url("../images/medium/basicAnimation3_tablet.jpg");
+        width:22.8em; 
+        height:20em;
+    }
+
+    #link6{
+        grid-area: animationProjectImg3;
+    }
+
+    /* // drum machine // */ 
+
+    #link7 #animationProjectImg4{
+        background-image: url("../images/medium/basicAnimation4_tablet.jpg");
+        width:22.8em; 
+        height:20em;
+    }
+
+    #link7{
+        grid-area: animationProjectImg4;
+    }
+
+    /* // kogi // */ 
+
+    #link8 #animationProjectImg5{
+        background-image: url("../images/medium/basicAnimation5_tablet.jpg");
+        width:22.8em; 
+        height:20em;
+    }
+
+    #link8{
+        grid-area: animationProjectImg5;
+    }
+
+    /* // super mario // */ 
+
+    #link9 #animationProjectImg6{
+        background-image: url("../images/medium/basicAnimation6_tablet.jpg");
+        width:22.8em; 
+        height:20em;
+    }
+
+    #link9{
+        grid-area: animationProjectImg6;
+    }
+
+    /* // ux area // */ 
+
+    #uxProjects{
+        display: grid; 
+        grid-template-columns: 1fr,1fr; 
+        grid-template-areas: 
+        "uxHeading uxHeading"
+        "uxProjectImg1 uxProjectImg2"  
+        "uxProjectImg3 uxProjectImg4"  
+    }
+
+    #uxHeading{
+        grid-area: uxHeading; 
+    }
+
+    /* // design sprint // */ 
+
+    #link10 #uxProjectImg1{
+        background-image: url("../images/medium/basicUx1_tablet.jpg");
+        width:22.8em; 
+        height:20em;
+    }
+
+    #link10{
+        grid-area: uxProjectImg1; 
+    }
+
+    /* // theme documentation // */ 
+
+    #link11 #uxProjectImg2{
+        background-image: url("../images/medium/basicUx2_tablet.jpg");
+        width:22.8em; 
+        height:20em;
+    }
+
+    #link11{
+        grid-area: uxProjectImg2; 
+    }
+
+    /* // native app // */ 
+
+    #link12 #uxProjectImg3{
+        background-image: url("../images/medium/basicUx3_tablet.jpg");
+        width:22.8em; 
+        height:20em;
+    }
+
+    #link12{
+        grid-area: uxProjectImg3; 
+    }
+
+    /* // web prototype// */ 
+
+    #link13 #uxProjectImg4{
+        background-image: url("../images/medium/basicUx4_tablet.jpg");
+        margin-top:-1.1em; 
+        width:22.8em; 
+        height:20em;
+    }
+
+    #link13{
+        grid-area: uxProjectImg4; 
+    }
+
+    /*  /////////          About me page         ///////// */ 
+
+    #detailsText{
+        margin-left:4.5em; 
+        margin-right:4.5em; 
+        display: grid; 
+        grid-template-columns: 1fr,1fr; 
+        grid-template-areas: 
+        "heading ."
+        "text icons"; 
+    }
+
+    #detailsText h1{
+        grid-area: heading; 
+        margin-top:3em; 
+    }
+    #detailsText p{
+        grid-area: text; 
+        margin-right:4em; 
+    }
+
+    #detailsText .aboutmeIcons{
+        grid-area: icons; 
+        margin-top:-6.5em; 
+    }
+
+    #educationText{
+        margin-left:4.5em; 
+        margin-right:4.5em; 
+        display: grid; 
+        grid-template-columns: 1fr,1fr; 
+        grid-template-areas: 
+        "heading ."
+        "text icons"; 
+    }
+
+    #educationText h1{
+        grid-area: heading; 
+        margin-top:-.5em; 
+    }
+    #educationText p{
+        grid-area: text; 
+        margin-right:4em; 
+    }
+
+    #educationText .aboutmeIcons{
+        grid-area: icons; 
+    }
+
+    #workExperienceText{
+        margin-left:4.5em; 
+        margin-right:4.5em; 
+        display: grid; 
+        grid-template-columns: 1fr,1fr; 
+        grid-template-areas: 
+        "heading ."
+        "text icons"; 
+    }
+    #workExperienceText h1{
+        grid-area: heading; 
+        margin-top:-.5em; 
+    }
+    #workExperienceText p{
+        grid-area: text; 
+        margin-right:4em; 
+    }
+
+    #workExperienceText .aboutmeIcons{
+        grid-area: icons; 
+        margin-top:-3.5em; 
+    }
+
+    #hobbiesText{
+        margin-left:4.5em; 
+        margin-right:4.5em; 
+        display: grid; 
+        grid-template-columns: 1fr,1fr; 
+        grid-template-areas: 
+        "heading ."
+        "text icons"; 
+    }
+
+    #hobbiesText h1{
+        grid-area: heading; 
+        margin-top:-.5em; 
+    }
+    #hobbiesText p{
+        grid-area: text; 
+        margin-right:4em; 
+    }
+
+    #hobbiesText .aboutmeIcons{
+        grid-area: icons; 
+        margin-top:-5.9em; 
+    }
+
+    /* /////// Individual project pages (((((/// */
+
+
+    .subpage,.theme,.project{
+        height:2.5em; 
+    }
+
+
+    .subpage p, .theme p, .project p{
+        font-size:.8em; 
+    }
+
+    .learningObjectives, .taskDescription, .process, #results{
+        margin-left: 3.5em; 
+        margin-right: 4.5em; 
+        margin-bottom: 3.2em;
+    }
+
+
+    .projectHeading{
+        margin-left:2em; 
+        margin-top:2.3em;
+        margin-bottom:1.8em;  
+    }
+
+
+    /*  ////  Saul bass page /// */
+
+    #saulbassPage1, #saulbassPage2, #saulbassPage3{
+        width:31%; 
+        height:31%;
+        display: inline-block; 
+        margin-bottom:1em; 
+        margin-top:1em; 
+    }
+
+    #saulbassImgBackgrounds{
+        width:40%;
+        height:40%; 
+        margin-left:-3em; 
+    }
+ 
+    #saulbassLogo{
+        width:30%; 
+        height:30%;
+    } 
+
+    #saulbassBanner{
+        width:30%; 
+        height:30%;
+        margin-bottom:1.5em; 
+    }
+
+    /*  ////  story w   ithout words page /// */
+
+    #withoutwordsVideo{
+        width:560px; 
+        height:315px; 
+    }
+
+
+    /*  ////  Kogi page /// */
+
+    #kogiCharacters1,#kogiCharacters2,#kogiCharacters3, #kogiCharacters4 {
+        display: inline-block; 
+        width:35%;
+        height:35%; 
+    }
+
+
+    #kogiBackgrounds1, #kogiBackgrounds2, #kogiBackgrounds3{
+        display: inline-block; 
+        width:35%;
+        height:35%; 
+    }
+
+    #kogiBackgrounds3{
+        margin-bottom: 1.8em;
+    }
+
+    .storyboardSlideshow{
+        display:block;
+        margin-left:4em;  
+    }
+
+    .sbPrevious, .sbNext{
+        font-size:3.5em; 
+        margin-top: -3.5em; 
+    }
+
+    .sbPrevious{
+        margin-left:-1.5em; 
+    }
+
+    .sbNext{
+        margin-left:11em; 
+    }
+
+    #kogiMotion1, #kogiMotion2, #kogiMotion3{
+        width:50%;
+        height:50%; 
+    }
+
+    /*  ////  mario page /// */
+
+    #marioAndPeach{
+        width:75%;
+        height:75%; 
+        margin-bottom: 1.8em;
+    }
+
+
+    /*  ////  drum machine page /// */
+
+    #drummachineLook{
+        width:75%;
+        height:75%;
+        margin-bottom:1.8em;
+    }
+
+    /*  ////  simple calculator page /// */
+
+    #calculatorStep1{
+        width:35%;
+        height:35%;
+    }
+
+    #calculatorStep3{
+        width:40%;
+        height:40%;
+    }
+
+        /*  ////  little prince page /// */
+
+    #littleprinceSong{
+        width:10em;
+        height:8em; 
+        margin-bottom:2.8em;
+        cursor: pointer;
+    }
+
+    #littleprinceSong p{
+        color: white; 
+        font-family: 'Ubuntu', sans-serif;
+        text-transform: uppercase;
+        font-size: .9em; 
+        text-align: center;
+        padding-top:3.5em; 
+    }
+
+    #littleprinceCharacters1, #littleprinceCharacters2{
+        display: inline-block; 
+        width:35%;
+        height:35%; 
+    }
+
+    #littleprinceBackgrounds1, #littleprinceBackgrounds2, #littleprinceBackgrounds3{
+        display: inline-block; 
+        width:35%;
+        height:35%; 
+        margin-bottom: 1.8em; 
+    }
+
+    #littleprinceInteraction1, #littleprinceInteraction2, #littleprinceInteraction3, #littleprinceInteraction4, #littleprinceInteraction5{
+        display: inline-block; 
+        cursor: pointer;
+        width:25%;
+        height:25%; 
+    }
+
+    /*  ////  native app page /// */
+
+    #nativeappSketch, #nativeappDecide{
+        width:95%;
+        height:95%;
+    }
+
+    #nativeappDecide{
+        margin-bottom: 1em; 
+    }
+
+    /*  ////  web prototype page /// */
+
+    .webprototypeSteps{
+        display: inline-block;
+        width:25%;
+        height:25%; 
+        margin-bottom: .8em; 
+        padding:.5em; 
+    }
+
+
+}
+
+/*  /////////          Media querie       ///////// */ 
+/*  /////////         Website      ///////// */ 
+
+@media all and (min-width:1100px) {
+   
+    /*  ////  all pages /// */ 
+
+    .logo img{
+        width:64%; 
+        margin-left:1em; 
+    }
+
+    nav{
+        margin-top:2.8em; 
+    }
+
+    nav a:hover{
+        border-bottom: .3em solid rgb(253, 206, 93);
+    }
+
+    h1{
+        font-size: 1.8em; 
+    }
+
+    .text{
+        font-size: 2em;
+        opacity: 0;  
+    }
+
+    .whiteArrow{
+        display: none;
+    }
+
+    .subpage, .theme, .project{
+        display: none; 
+    }
+
+    .informationOnTask{
+        display: inline-block; 
+        margin-left:50em; 
+        margin-top:1.5em; 
+
+    }
+    .taskNmbr{
+        border-right: .3em solid rgb(253, 206, 93);
+        padding-right:.8em; 
+    }
+
+    .taskNmbr,  .taskTheme{
+        display: inline-block;
+        font-family: 'Ubuntu', sans-serif;
+        text-transform: uppercase;
+        font-size:.85em; 
+    }
+
+    .taskTheme{
+        padding-left:.5em;
+    }
+
+
+    /*  ////  Intro page (slideshow + project areas)  /// */ 
+
+    #introVideoWeb{
+        visibility: visible;
+        margin-top:-13.2em;
+    }
+
+    #introMobile{
+        display: none; 
+    }
+
+    #introVideoTablet{
+        visibility: hidden;  
+    }
+
+    /*  ////  Project page (slideshow + project areas)  /// */ 
+
+    .slideshow{
+        width:35em;
+        height:25em; 
+        margin-top:-7em; 
+        margin-left:25vw; 
+        padding-bottom:2em; 
+    }
+
+    .previous{
+        margin-left:-12.7em;
+        font-size: 2.8em; 
+    }   
+
+    .next{
+        margin-left: -.4em;
+        font-size: 2.8em; 
+    }
+
+    /* // Basic web area// */ 
+
+    /* // Saul bass // */ 
+
+    #projectsAll h1{
+       margin-left:2.4em; 
+       margin-top:2.5em; 
+    }
+
+    #webProjects{
+        margin-top:5.5em; 
+        margin-left:1.8em; 
+        margin-bottom:14em; 
+    }
+
+    #webProjects h1{
+        margin-top:-.1em;
+        margin-left:1.3em;
+    }
+
+    #link1 #webProjectImg{
+        background-image: url("../images/large/basicWeb.jpg");
+        width:34em; 
+        height:20em;
+        margin-left:.1em;
+    }
+
+    #link1 .text{
+        margin-top:-5.5em;
+        margin-left:1em;  
+    }
+
+    #link1:hover #webProjectImg{
+        background-image: none; 
+        background-color: rgb(253, 206, 93);
+    }
+
+    #link1:hover .text{
+        opacity: 1; 
+    }
+
+    /* // Basic Content Area// */ 
+
+    #contentProjects{
+        margin-right:4.1em; 
+        margin-left:2em; 
+        margin-bottom:5.5em; 
+        display: grid; 
+        grid-template-columns: 1fr,1fr; 
+        grid-template-areas: 
+        "contentHeading contentHeading"
+        "contentProjectImg1 contentProjectImg2"  
+    }
+
+    #contentHeading{
+        grid-area: contentHeading;   
+    }
+
+     /* // Be a bikenhagen // */ 
+
+    #link2 #contentProjectImg1{
+        background-image: url("../images/large/basicContent1.jpg");
+        width:34em; 
+        height:20em;
+    }
+
+    #link2 .text{
+       margin-top:-5.5em;
+       margin-left:2.3em;  
+    }
+
+    #link2{
+        grid-area: contentProjectImg1; 
+    }
+
+    #link2:hover #contentProjectImg1{
+        background-image: none; 
+        background-color: rgb(253, 206, 93);
+    }
+
+    #link2:hover .text{
+        opacity: 1;
+    }
+
+     /* // a story without words // */ 
+
+    #link3 #contentProjectImg2{
+        background-image: url("../images/large/basicContent2.jpg");
+        width:34em; 
+        height:20em;
+    }
+
+    #link3 .text{
+        margin-top:-6em;
+        margin-left:2.1em; 
+    }
+
+    #link3{
+        grid-area: contentProjectImg2; 
+    }
+
+    #link3:hover #contentProjectImg2{
+        background-image: none; 
+        background-color: rgb(253, 206, 93);
+    }
+
+    #link3:hover .text{
+        opacity: 1; 
+    }
+
+    /* // Basic Animation area // */ 
+
+    #animationProjects{
+        margin-right:4.1em; 
+        margin-left:2em; 
+        margin-bottom:5.5em;
+        display: grid; 
+        grid-template-columns: 1fr,1fr,1fr; 
+        grid-template-areas: 
+        "heading heading heading"
+        "animationProjectImg1 animationProjectImg1 animationProjectImg2" 
+        "animationProjectImg3 animationProjectImg4 animationProjectImg2" 
+        "animationProjectImg5 animationProjectImg5 animationProjectImg6"
+    }
+
+    #animationHeading{
+        grid-area:heading; 
+    }
+
+     /* // whalie // */ 
+
+    #link4 #animationProjectImg1{
+        width:44.5em; 
+        height:20em;
+        background-image: url("../images/large/basicAnimation1.jpg");  
+    }
+    
+    #link4 .text{
+        margin-top:-5.5em;
+        margin-left:4.3em; 
+    }
+
+    #link4{
+        grid-area: animationProjectImg1;
+        margin-bottom: 7.72em; 
+    }
+
+    #link4:hover #animationProjectImg1{
+        background-image: none; 
+        background-color: rgb(253, 206, 93);
+    }
+
+    #link4:hover .text{
+        opacity: 1;
+    }
+
+     /* // little prince // */ 
+
+    #link5 #animationProjectImg2{
+        width:24em; 
+        height:40em;
+        margin-left:-.7em; 
+        background-image: url("../images/large/basicAnimation2.jpg"); 
+    }
+
+    #link5 .text{
+        margin-top:-12.2em;
+        margin-left:2.5em; 
+    }
+
+    #link5{
+        grid-area: animationProjectImg2;
+    }
+
+    #link5:hover #animationProjectImg2{
+        background-image: none; 
+        background-color: rgb(253, 206, 93);
+    }
+
+    #link5:hover .text{
+        opacity: 1;
+    }
+
+     /* // simple calculator // */ 
+
+    #link6 #animationProjectImg3{
+        width:21.5em; 
+        height:18.5em;
+        margin-top:.5em; 
+        background-image: url("../images/large/basicAnimation3.jpg"); 
+    }
+
+    #link6 .text{
+        margin-top:-5.6em;
+        margin-left:.9em; 
+    }
+
+    #link6{
+        grid-area: animationProjectImg3;
+    }
+
+    #link6:hover #animationProjectImg3{
+        background-image: none; 
+        background-color: rgb(253, 206, 93);
+    }
+
+    #link6:hover .text{
+        opacity: 1;
+    }
+
+     /* // drum machine // */ 
+
+    #link7 #animationProjectImg4{
+        width:21.5em; 
+        height:18.5em;
+        margin-left:-.9em; 
+        margin-top:.5em; 
+        background-image: url("../images/large/basicAnimation4.jpg"); 
+    }
+
+    #link7 .text{
+        margin-top:-5.6em;
+        margin-left:.5em; 
+    }
+
+    #link7{
+        grid-area: animationProjectImg4;
+        margin-bottom:6.6em; 
+    }
+
+    #link7:hover #animationProjectImg4{
+        background-image: none; 
+        background-color: rgb(253, 206, 93);
+    }
+
+    #link7:hover .text{
+        opacity: 1;
+    }
+
+     /* // kogi // */ 
+
+    #link8 #animationProjectImg5{
+        width:35.5em; 
+        height:20em;
+        background-image: url("../images/large/basicAnimation5.jpg"); 
+    }
+
+    #link8 .text{
+        margin-top:-5.5em;
+        margin-left:.2em; 
+    }
+
+    #link8{
+        grid-area: animationProjectImg5;
+        margin-bottom: 5em; 
+    }
+
+    #link8:hover #animationProjectImg5{
+        background-image: none; 
+        background-color: rgb(253, 206, 93);
+    }
+
+    #link8:hover .text{
+        opacity: 1;
+    }
+
+     /* // supermario  // */ 
+
+    #link9 #animationProjectImg6{
+        width:33em; 
+        height:20em;
+        margin-left:-9.5em; 
+        background-image: url("../images/large/basicAnimation6.jpg"); 
+    }
+
+    #link9 .text{
+        margin-top:-6.5em;
+        margin-left:-2.8em; 
+    }
+
+    #link9{
+        grid-area: animationProjectImg6;
+    }
+
+    #link9:hover #animationProjectImg6{
+        background-image: none; 
+        background-color: rgb(253, 206, 93);
+    }
+
+    #link9:hover .text{
+        opacity: 1;
+    }
+
+     /* // ux area  // */ 
+
+    #uxProjects{
+        margin-right:4.1em; 
+        margin-left:2em; 
+        display: grid; 
+        grid-template-columns: 1fr,1fr 1fr; 
+        grid-template-areas: 
+        "heading heading heading"
+        "uxProjectImg1 uxProjectImg2 uxProjectImg3 " 
+        "uxProjectImg1 uxProjectImg4 uxProjectImg4" 
+    }
+
+    #uxHeading{
+        grid-area: heading; 
+    }
+
+     /* // design sprint  // */ 
+
+    #link10 #uxProjectImg1{
+        width:25em; 
+        height:40em;
+        background-image: url("../images/large/basicUx1.jpg");
+    }
+
+    #link10 .text{
+        margin-top:-11em;
+        margin-left:2.3em; 
+    }
+
+    #link10{
+        grid-area: uxProjectImg1; 
+    }
+
+    #link10:hover #uxProjectImg1{
+        background-image: none; 
+        background-color: rgb(253, 206, 93);
+    }
+
+    #link10:hover .text{
+        opacity: 1;
+    }
+
+     /* // theme documentation  // */ 
+
+    #link11 #uxProjectImg2{
+        width:21.5em; 
+        height:18.5em;
+        margin-bottom: .5em; 
+        margin-left: -1.6em;
+        background-image: url("../images/large/basicUx2.jpg");
+    }
+
+    #link11 .text{
+        margin-top:-6.5em;
+        margin-left:.4em; 
+    }
+
+    #link11{
+        grid-area: uxProjectImg2; 
+    }
+
+    #link11:hover #uxProjectImg2{
+        background-image: none; 
+        background-color: rgb(253, 206, 93);
+    }
+
+    #link11:hover .text{
+        opacity: 1;
+    }
+
+     /* // native app // */ 
+
+    #link12 #uxProjectImg3{
+        width:21.5em; 
+        height:18.5em;
+        margin-left: -1.5em;
+        background-image: url("../images/large/basicUx3.jpg");
+    }
+
+    #link12 .text{
+        margin-top:-6.2em;
+        margin-left:.5em; 
+    }
+
+    #link12{
+        grid-area: uxProjectImg3; 
+        margin-bottom: 7.4em;
+    }
+
+    #link12:hover #uxProjectImg3{
+        background-image: none; 
+        background-color: rgb(253, 206, 93);
+    }
+
+    #link12:hover .text{
+        opacity: 1;
+    }
+
+     /* // web prototype // */ 
+
+    #link13 #uxProjectImg4{
+        width:44.5em; 
+        height:20em;
+        margin-left:-1.6em;
+        background-image: url("../images/large/basicUx4.jpg");
+        margin-top:-3.6em; 
+    }
+
+    #link13 .text{
+        margin-top:-5.5em;
+        margin-left: 4.1em; 
+    }
+
+    #link13{
+        grid-area: uxProjectImg4; 
+        margin-bottom: 10em; 
+    }
+
+    #link13:hover #uxProjectImg4{
+        background-image: none; 
+        background-color: rgb(253, 206, 93);
+    }
+
+    #link13:hover .text{
+        opacity: 1;
+    }
+
+
+    /*  ////  About me page (layout) /// */ 
+
+    .aboutmeIcons{
+        display: none; 
+    }
+
+    #aboutmeMain{
+        display: grid; 
+        grid-template-columns: 1fr,1fr; 
+        grid-template-areas:
+            "details detailsVideo"
+            "educationVideo education"
+            "work workVideo"
+            "hobbiesVideo hobbies"
+    }
+
+    #detailsText{
+        display: inline-block;
+        margin-top: 3em; 
+        margin-left:6.5em;  
+        margin-bottom:20em;  
+        grid-area: details; 
+    }
+
+    #detailsText p{
+        margin-bottom:-8em; 
+
+    }
+
+    #educationText{ 
+        display: inline-block;
+        margin-left:6.5em; 
+        margin-right:2em;  
+        margin-bottom:20em; 
+        grid-area: education; 
+    }
+    #workExperienceText{
+        display: inline-block;
+        margin-top: -8em; 
+        margin-bottom:20em; 
+        margin-right:2em;  
+        grid-area: work; 
+    }
+
+    #hobbiesText{
+        display: inline-block;
+        margin-left:6.5em; 
+        margin-right:2em;
+        margin-bottom:20em; 
+        margin-top: -8em; 
+        grid-area: hobbies;
+    }
+
+    #eastereggHamburg{
+        display: inline-block;
+        margin-top:-1.3em; 
+        width:75%; 
+        height:75%;
+        margin-left:2em; 
+        grid-area: detailsVideo; 
+    }
+
+    #eastereggEducation{
+        display: inline-block;
+        width:75%; 
+        height:75%;
+        margin-left:6.5em;
+        margin-top:-6.3em; 
+        grid-area: educationVideo; 
+    }
+
+    #eastereggWork{
+        display: inline-block;
+        width:85%; 
+        height:85%;
+        margin-left:4em; 
+        margin-top:-14.3em; 
+        grid-area: workVideo; 
+    }
+
+    #eastereggHobbies{
+        display: inline-block;
+        width:85%; 
+        height:85%;
+        margin-top:-9.6em; 
+        margin-left:4.5em;
+        grid-area: hobbiesVideo; 
+    }
+
+  /*  ////  Project page (slideshow + project areas)  /// */ 
+
+    .taskDescription,.learningObjectives, .process, #results{
+        margin-left:6.5em; 
+        margin-right:6.5em; 
+        margin-bottom:3.8em; 
+    }
+
+    .projectHeading{
+        margin-left:3.7em;
+        margin-top:1em; 
+    }
+    
+    /*  ////  Saul bass page /// */
+
+
+    #saulbassPage1, #saulbassPage2, #saulbassPage3{
+        width:25%; 
+        height:31%;
+        padding:1em; 
+        display: inline-block; 
+        margin-bottom:1.7em; 
+    }
+
+    #saulbassPage1{
+        margin-left:3em; 
+    }
+
+    #saulbassColors{
+        width:30%; 
+        height:30%;
+        margin-bottom:1em; 
+    } 
+
+    #saulbassImgBackgrounds{
+        width:38%;
+        height:38%; 
+        margin-left:-4.1em; 
+        margin-bottom:1em; 
+    }
+ 
+    #saulbassLogo{
+        width:29%; 
+        height:29%;
+        margin-left:-.8em; 
+        margin-bottom:1em; 
+    } 
+
+    #saulbassBanner{
+        width:32%; 
+        height:32%;
+        margin-bottom:1em; 
+    }
+
+
+        /*  ////  Without words page /// */
+
+    #withoutwordsVideo{
+        width:560px; 
+        height:315px; 
+    }
+
+    /*  ////  Whalie page /// */
+
+    #whalieAnimation{
+        width:70%; 
+        height:70%; 
+        margin-bottom: 1em; 
+        margin-top: 1em; 
+    }
+
+    /*  ////  Kogi page /// */
+
+    #kogiCharacters1,#kogiCharacters2,#kogiCharacters3, #kogiCharacters4 {
+        display: inline-block; 
+        width:20%;
+        height:20%;
+        padding:.2em;  
+    }
+
+
+    #kogiBackgrounds1, #kogiBackgrounds2, #kogiBackgrounds3{
+        display: inline-block; 
+        width:30%;
+        height:30%; 
+        margin-bottom:1em; 
+    }
+
+    #kogiBackgrounds3{
+        width:24%;
+        height:24%;
+        margin-bottom:1em;  
+    }
+
+    .storyboardSlideshow{
+        margin-bottom:1.9em; 
+    }
+
+    #kogiMotion2, #kogiMotion3{
+        width:50%;
+        height:50%; 
+    }
+
+    #kogiMotion2{
+        margin-bottom:1em;  
+    }
+
+    #kogiMotion1{
+        width:30%;
+        height:30%; 
+        margin-right:2em; 
+        margin-bottom:1em; 
+    }
+
+
+    /*  ////  simple calculator page /// */
+
+    #calculatorStep1, #calculatorStep3{
+        width:25%;
+        height:25%;
+    }
+
+    /*  ////  drum machine calculator page /// */
+
+    #drummachineLook{
+        width:50%;
+        height:50%;
+    }
+
+    /*  ////  little prince page /// */
+
+    #littleprinceSong{
+        width:10em;
+        height:8em; 
+        margin-bottom:2.8em;
+        margin-top:2em;
+    }
+
+    #littleprinceSong p{
+        font-size: .9em; 
+        padding-top:3.5em; 
+    }
+
+    #littleprinceCharacters1, #littleprinceCharacters2{
+        display: inline-block; 
+        width:25%;
+        height:25%; 
+    }
+
+    #littleprinceBackgrounds1, #littleprinceBackgrounds2, #littleprinceBackgrounds3{
+        width:29%;
+        height:29%; 
+        margin-bottom: 1.8em; 
+    }
+
+    #littleprinceInteraction1, #littleprinceInteraction2, #littleprinceInteraction3, #littleprinceInteraction4, #littleprinceInteraction5{
+        width:19.5%;
+        height:19.5%; 
+    }
+
+    /*  ////  design sprint page /// */
+
+    .sprintSketch{
+        width:70%;
+        height:70%; 
+    }
+
+    #sprintSketch2{
+        width:40%;
+        height:40%;
+    }
+
+    #sprintSketch3{
+        width:30%;
+        height:30%;
+    }
+
+    #sprintDecide{
+        width:70%;
+        height:70%; 
+        margin-bottom:1.8em; 
+    }
+
+    /*  ////  native app page /// */
+
+    #nativeappSketch{
+        width: 50%; 
+        height:50%; 
+    }
+    #nativeappDecide{
+        width: 70%; 
+        height:70%; 
+    }
+
+    /*  ////  web prototype page /// */
+
+    .webprototypeSteps{
+        width: 18.5%; 
+        height:18.5%; 
+        padding:.3em;
+    }
+
+}

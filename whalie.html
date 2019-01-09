@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <title>Home</title>
+</head>
+
+
+<header>
+    <a class="backBtn" href="projects.html"><i class='fas fa-angle-left'></i></a>
+    <a href="index.html"><picture class="logo">
+        <source media="(min-width:1100px)" srcset="images/large/logo_web.jpg">
+        <source media="(min-width:750px)" srcset="images/medium/logo_tablet.jpg">
+        <img src="images/small/logo_mobile.jpg" alt="Logo">
+     </picture></a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="aboutme.html">About me</a>
+    </nav>
+    <div class="sidenav">
+        <a href="#" class="closebtn">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="aboutme.html">About me</a>
+    </div>
+    <div id="burgermenu">&#9776;</div>
+</header>
+
+<body>
+    <main>
+         <div class="subpage"><p>Projects</p></div>
+        <div class="theme"><p>Theme 03: Basic Animationt</p></div>
+         <div class="project"><p>Link to simple animation</p></div>
+   
+        <div class="informationOnTask">
+            <div class="taskNmbr">Task 03.01.02</div>
+            <div class="taskTheme">Basic Animation</div>
+        </div>
+
+
+        <h1 class="projectHeading">Whalie</h1>
+        <section class="taskDescription">
+        <h2>about the task</h2>
+        <p>
+            The task was about creating a webpage that involves a character and 10 to 15 buttons.
+            When the user clicks on one of the buttons, an animation should start. 
+        </p>
+        </section>
+
+        <section class="process">
+            <h2>What I did</h2>
+            <h3>The design</h3>
+            <p>I drew the character in Illustrator.</p>
+            <img id="whalieAnimation" src="images/large/whalieAnimation.jpg">
+            <h3>The code</h3>
+            <p> I chose 10 movements I wanted to animate in CSS.</p>
+            <ul>
+                <li>Move: Make the character move from left to right continually.</li>
+                <li>Move to 30: Make the character move from the left side of the screen
+                    to 30% into the scene. Make the character slow down before it stops and stay at its final position.</li>
+                <li>Move from 30: Make the character move from 30% of the scene to the right outside. 
+                    Make sure the it picks up speed.
+                </li>
+                <li>One jump: Make the character jump and fall back nicely.</li>
+                <li>Jumping: Make the character jump up and down.</li>
+                <li>Fade: Make the character fade in and out.</li>
+                <li>Fall down: Make the character fall down.</li>
+                <li>Speak: Make the character look like it's speaking.</li>
+                <li>Shake: Make the character shake.</li>
+                <li>Move to 0: Move the character to the left side of the scene.</li>
+            </ul>
+            <p>Find the code <a href="https://github.com/sarigu/whalie" target="blank">on GitHub</a>.<br><br></p>
+            <h3>The final version</h3>
+            <p>Try to move "Whalie" around <a href="http://guckimonster.de/whalie-animation/index.html" target="blank">here</a>.</p>
+        </section>
+
+                
+        </section>
+        <section class="learningObjectives">
+            <h2>What I have learned</h2>
+            <ul>
+                <li>The importance of meaningful names for classes, buttons, keyframes and 
+                    functions as well as having a clear structure</li>
+                <li>Basic Java Script</li>
+                <li>How to add JS</li>
+                <li>How to make simple animations by using CSS</li>
+            </ul>
+        </section>
+
+    </main>
+</body>
+
+<script src="js/interaction.js"></script>
+
+<footer>A Multimedia Design exam project made by Sari. 09/01/19.</footer>
+
+</html>

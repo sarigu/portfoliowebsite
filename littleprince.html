@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <title>Home</title>
+</head>
+
+
+<header>
+    <a class="backBtn" href="projects.html"><i class='fas fa-angle-left'></i></a>
+    <a href="index.html"><picture class="logo">
+        <source media="(min-width:1100px)" srcset="images/large/logo_web.jpg">
+        <source media="(min-width:750px)" srcset="images/medium/logo_tablet.jpg">
+        <img src="images/small/logo_mobile.jpg" alt="Logo">
+     </picture></a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="aboutme.html">About me</a>
+    </nav>
+    <div class="sidenav">
+        <a href="#" class="closebtn">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="aboutme.html">About me</a>
+    </div>
+    <div id="burgermenu">&#9776;</div>
+</header>
+
+<body>
+    <main>
+        <div class="subpage"><p>Projects</p></div>
+        <div class="theme"><p>Theme 03: Basic Animation</p></div>
+        <div class="project"><p>Interactive production</p></div>
+     
+        <div class="informationOnTask">
+            <div class="taskNmbr">Tasks 03.03.04-05</div>
+            <div class="taskTheme">Basic Animation</div>
+        </div>
+
+        <h1 class="projectHeading">the little prince</h1>
+        <section class="taskDescription">
+        <h2>about the task</h2>
+        <p>
+            The project was about creating an interactive story with focus on the story, a style, character design, animations and interactivity design for a specific target group.
+            I was part of the coding team. 
+        </p>
+        </section>
+
+        <section class="process">
+            <h2>What I did</h2>
+            <h3>the inspiration</h3>
+            <p>
+                We wanted to create an animation based on „The Little Prince“. 
+                It is an animation for young adults who are interested in art. We were 
+                given a Jimmy Hendrix Song called "..And The Gods Made Love".       
+            </p>
+            <div id="littleprinceSong">
+                <audio id="hendrixSong">
+                    <source src="sound/hendrix.mp3" type="audio/mpeg">
+                </audio>
+                <p id="listenToSong">Listen to the song</p>
+            </div>    
+            <h3>The design</h3>
+            <p>The style we had to use was Surrealism.</p>
+            <h4>The characters</h4>
+            <img id="littleprinceCharacters1" src="images/large/littleprincePrince.jpg">
+            <img  id="littleprinceCharacters2" src="images/large/littleprinceFox.jpg">
+            <h4>The backgrounds</h4>
+         
+            <img id="littleprinceBackgrounds1" src="images/large/littleprinceBackground1.jpg">
+
+            <img id="littleprinceBackgrounds2" src="images/large/littleprinceBackground2.jpg">
+
+         
+            <h3>The story + interactivity</h3>
+            <p>
+                We decided on the scene, when the little prince meets the fox for the very first 
+                time while still having his rose in mind. Interactivity is a central part of the story. 
+                Without user clicks the story wouldn't continue. Besides that we incorporated four eastereggs.
+                Click on the images below to see them.
+            </p>
+            <video id="littleprinceInteraction1">
+                <source src="videos/fishInteraction.mp4" type="video/mp4">
+            </video> 
+            <video id="littleprinceInteraction2" >
+                <source src="videos/birdInteraction.mp4" type="video/mp4">
+            </video> 
+            <video id="littleprinceInteraction3" >
+                <source src="videos/starInteraction.mp4" type="video/mp4">
+            </video> 
+            <video id="littleprinceInteraction4" >
+                <source src="videos/sunInteraction.mp4" type="video/mp4">
+            </video> 
+
+            <video id="littleprinceInteraction5" >
+                <source src="videos/moonInteraction.mp4" type="video/mp4">
+            </video>
+            <p><a href="https://www.youtube.com/watch?v=2l1bmZlK6RM " target="blank">See </a>the screencast to learn more about our groups' process.<br><br></p>
+            <h3>The final version</h3>
+            <p>Try the "Little Prince" - animation <a href="http://guckimonster.de/thelittleprince/index.html" target="blank">here.</a></p>
+        </section>
+
+        <section class="learningObjectives">
+            <h2>What I have learned</h2>
+            <p>
+                    I experienced really good group work. 
+                    It was nice to see others code and learn from it. I understood how to make a sequenz diagram.
+                    In the beginning it was confusing to work on the same code at the same time, but we learned 
+                    to cope with it and how important it is to maintain a clean strucure, share changes, talk about names and splitting up part, that need to be coded, in a smart way. 
+                    It was also interesting to see what users expect from clicking on interactive elements. 
+            </p>
+        </section>
+  
+    </main>
+</body>
+
+
+<script src="js/littleprince.js"></script>
+
+<footer>A Multimedia Design exam project made by Sari. 09/01/19.</footer>
+
+</html>
